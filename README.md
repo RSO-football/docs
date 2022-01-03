@@ -8,6 +8,37 @@ Aplikacija bo športnim klubom in trenerjem omogočala vodenje obveznosti. Klubi
 
 Za izdelavo aplikacije smo uporabili razvojno okolje IntelliJ IDEA, Javo 13 in ogrodju KumuluzEE. Kot ponudnika oblačnih storitev, kjer je nameščeno okolje kubernetes, pa smo izbrali Azure. Frontend je bil narejen v Angular-ju.
 
+## Seznam izpostavljenih točk
+
+Mikrostoritev Igralci:
+       1.GET, POST, PUT in DELETE zahteve
+
+Mikrostoritev Igrisca:
+       1. GET, POST, PUT in DELETE zahteve 
+       2. /igrisca/igriscaId -\> vrne vse id-je igrišč
+
+Mikrostoritev Uporabniki:
+
+       1. GET, POST, PUT in DELETE zahteve
+       2. /uporabniki/trenerji -\> vrne vse uporabnike, ki so trenerji
+       3. /uporabniki/trenerjiId -\> vrne vse id-je uporabnikov, ki so trenerji
+
+Mikrostoritev Rezervacije:
+
+       1. GET, POST, PUT in DELETE zahteve
+       2. rezervacije?trenerId={trenerId} -> vrne rezervacije trenerja z id-jem trenerId
+       3. rezervacije?igrisceId={igrisceId} -> vrne vse rezervacije, ki so na igrišči z id-jem igrisceId
+
+Mikrostoritev Rekviziti:
+
+       1. GET, POST, PUT in DELETE zahteve
+       2. rekviziti//cena/{trenerId} -> vrne ceno vseh rekvizitov, ki jih je prodal trener z id-jem trenerId
+
+Mikrostoritev Postavke:
+       1. GET, POST, PUT in DELETE zahteve
+       2. postavke/place -> vrne plače za vse uporabnike, ki so trenerji
+       3. postavke?trenerId={trenerId} -> vrne postavko od trenerja z id-jem trenerId
+
 ## Shema povezav rešitve
 
 ![shema](https://user-images.githubusercontent.com/56541694/147965503-60c93adb-1d1a-455d-ae67-d913dda5dddc.PNG)
