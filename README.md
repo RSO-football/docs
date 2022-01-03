@@ -11,9 +11,11 @@ Za izdelavo aplikacije smo uporabili razvojno okolje IntelliJ IDEA, Javo 13 in o
 ## Seznam izpostavljenih točk
 
 Mikrostoritev Igralci:
+
        1.GET, POST, PUT in DELETE zahteve
 
 Mikrostoritev Igrisca:
+
        1. GET, POST, PUT in DELETE zahteve 
        2. /igrisca/igriscaId -\> vrne vse id-je igrišč
 
@@ -35,6 +37,7 @@ Mikrostoritev Rekviziti:
        2. rekviziti//cena/{trenerId} -> vrne ceno vseh rekvizitov, ki jih je prodal trener z id-jem trenerId
 
 Mikrostoritev Postavke:
+
        1. GET, POST, PUT in DELETE zahteve
        2. postavke/place -> vrne plače za vse uporabnike, ki so trenerji
        3. postavke?trenerId={trenerId} -> vrne postavko od trenerja z id-jem trenerId
