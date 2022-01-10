@@ -52,4 +52,8 @@ V shemi so skoraj vse povezave med mikrostoritvami HTTP/synchronous REST. Dodali
 
 Ingress je nastavljen čez naslove vseh mikrostoritev, da so izpostavljene na skupnem IP-ju: http://40.76.175.239, z dodanimi maskami enakimi imenom mikrostoritev ("/igralci", "/igrisca",...).
 
+---
+
+Dodatne informacije glede aplikacije so na volju v poročilu.
+
 
