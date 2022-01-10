@@ -45,3 +45,11 @@ Mikrostoritev Postavke:
 ## Shema povezav rešitve
 
 ![shema](https://user-images.githubusercontent.com/56541694/147965503-60c93adb-1d1a-455d-ae67-d913dda5dddc.PNG)
+
+V shemi so skoraj vse povezave med mikrostoritvami HTTP/synchronous REST. Dodali pa smo tudi asinhrono povezavo med mikrostoritvama Postavke in Uporabniki. Tu je asinhrona povezava narejena tako, da ko se ustvari nov uporabnik z vlogo trenerja ali pa posodobi trenutni uporabnik na vlogo trenerja se kliče asinhron REST klic, ki novemu trenerju naredi privzeto postavko.
+
+## Ingress
+
+Ingress je nastavljen čez naslove vseh mikrostoritev, da so izpostavljene na skupnem IP-ju: http://40.76.175.239, z dodanimi maskami enakimi imenom mikrostoritev ("/igralci", "/igrisca",...).
+
+
